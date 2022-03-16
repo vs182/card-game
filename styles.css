@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: url(./cards.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  position: relative;
+  height: 1000px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.profit{
+  text-align: center;
+  position: absolute;
+  bottom:8%;
+  left: 10%;
+  font-size: 25px;
+}
+.deck {
+  transition: 1.2s;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;  height: 500px;
+  width: 300px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:0.5rem;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  user-select: none;
+}
+.coin{
+  top:30%;
+  right: -22%;
+  position: absolute;
+  height: 250px;
+  border-radius: 10px;
+  background: #fff;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.coin img{
+  height: 200px;
+  animation: coin 2s linear infinite;
+}
+@keyframes coin{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0) ;
+  }
+}
+.name{
+  position: absolute;
+  top:12%;
+  font-size: 28px;
+}
+.coin p {
+  text-align: center;
+  font-size: 24px;
+}
+.profile{
+  top:15%;
+  left: 15%;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.profile img{
+  object-fit: cover;
+  height: 80px;
+  width: 100%;
+  border-radius: 50%;
+}
+.pc{
+  top:15%;
+  right: 20%;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+#chance{
+  position: absolute;
+  right: -10%;
+  top:20%;
+  font-size: 24px;
+}
+#bet{
+  text-align: center;
+  position: absolute;
+  top:20%;
+  padding: 10px;
+  height: 20px;
+  font-size: 25px;
+  width: 300px;
+}
+.pc img{
+  object-fit: cover;
+  height: 80px;
+  width: 100%;
+  border-radius: 50%;
+}
+.btn-grad {background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)}
+.btn-grad {
+  position: absolute;
+   margin: 10px;
+   bottom: 5%;
+   padding: 20px 50px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;    
+   font-size: 25px;        
+   width: 200px;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   cursor: pointer;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+.card {
+  transition: 1.2s;
+  background: #fff;
+  position: relative;
+  height: 500px;
+  width: 300px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  border-radius: 0.5rem;
+}
+span{
+  text-align: center;
+}
+.text {
+ 
+  letter-spacing: 5px;
+  font-size: 100px;
+  z-index: 2;
+  position:absolute;
+  -webkit-text-stroke: 10px rgb(255, 0, 0);
+  animation: text 3s linear infinite;
+}
+@keyframes text{
+  0%{
+    transform: scale(0);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.card.red {
+  color: red;
+}
+
+.card.black {
+  color: black;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: attr(data-value);
+  font-size: 3rem;
+}
+
+.card::before {
+  top: .5rem;
+  left: .5rem
+}
+
+.card::after {
+  bottom: .5rem;
+  right: .5rem;
+  transform: rotate(180deg);
+} 
+
+
+#customers {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 200px;
+  left: -30%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+  background: #fff;
+}
+.total{
+  position: absolute;
+  left: -30%;
+  padding: 5px;
+  background: #fff;
+  color: red;
+  top:65%;
+}
+.totals{
+  position: absolute;
+  left: -30%;
+  padding: 5px;
+  background: #fff;
+  color: red;
+  top:70%;
+}
+.totals a{
+  text-decoration: none;
+}
+#customers tr:nth-child(even){background-color: #f2f2f2;text-align: center;}
+
+#customers tr:hover {background-color: #ddd;text-align: center;}
+
+#customers th {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+

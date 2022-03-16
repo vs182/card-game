@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Card Game</title>
+  <script src="script.js" type="module"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- <audio id="audio" src="./lose.wav" autoplay="false" ></audio>
+  <audio id="audio_dig" src="./win.wav" type="audio/mpeg" autoplay="false" ></audio> -->
+ <div class="container">
+  <table id="customers">
+    <tr>
+      <th>Turn's</th>
+      <th>Profit</th>
+      <th>Loss</th>
+    </tr>
+  </table>
+  <p class="total" id="total"></p>
+  <button class="totals"><a href="./graph.html">View Graph</a></button>
+   <p class="name" id="names"></p>
+   <input id="bet" type="text" disabled placeholder="Amount">
+   <div class="coin">
+     <img  src="./—Pngtree—coin golden 3d digital_5879622.png" alt="">
+     <p id="points"></p>
+   </div>
+   <p class="profit">$ 0</p>
+   <div class="profile">
+    <img id="4" src="https://www.pngmart.com/files/12/King-Crown-PNG-Transparent-Image.png" alt="" srcset="">
+   </div>
+   <div class="user pc"></div>
+  <div class="computer-deck deck"></div>
+  <div class="computer-card-slot card-slot"></div>
+  <div id="text" class="text">
+  </div>
+  <p id="chance"></p>
+  <div class="player-deck deck"></div>
+  <div class="player-card-slot card-slot"></div>
+  <button class="btn-grad" id="roll">Roll</button>
+ </div>
+
+</body>
+</html>

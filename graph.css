@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.graph-container{
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(3,1fr);
+  }
+  
